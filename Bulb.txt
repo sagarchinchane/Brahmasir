@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myImage(){
+            var image=document.getElementById("myImage");
+            if(image.src.match("ONbulb"))
+                image.src = "https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg";
+            else
+            image.src = "https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg";
+        }
+        
+    </script>
+    <h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+
+<img id="myImage" onclick="myImage()" src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg" style="width:100px">
+
+
+
+
+    <img id="Image" onclick="turnOnOff()" 
+    src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg">
+    <h2 id="hii">Hii</h2>
+    <button onclick="colorChange()">clickMe</button>
+      
+        <p>Click on the bulb to turn it ON and OFF</p>
+      
+        <script>
+            function colorChange(){
+                document.getElementById("hii").style.color="purple";
+            }
+         // implementation of turnOnOff function -->
+         function turnOnOff(){
+         var image = document.getElementById('Image');
+         if (image.src.match("ONbulb"))
+             image.src = "https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg";
+         else
+             image.src = "https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg";
+         }
+         setInterval(turnOnOff,1000)
+         setInterval(myImage,2000)
+
+        </script>
+</body>
+</html>
