@@ -67,7 +67,7 @@ class main
 }
 
 
-Inheritence
+hierarchiel Inheritence
 
 using System;
 class vehicle
@@ -199,7 +199,7 @@ class main
 }
 
 
-Inheritence
+ Single Inheritence
 
 using System;
 
