@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+ Multilevel Inheritence
+ 
 using System;
 namespace Multilevel
 {
@@ -39,6 +41,8 @@ namespace Multilevel
     }
 }
 
+Compile Time Polymorphism/Method overloading
+
 class Compile
 {
     public void student(string name, int age)
@@ -62,6 +66,8 @@ class main
     }
 }
 
+
+Inheritence
 
 using System;
 class vehicle
@@ -98,6 +104,8 @@ class main
     }
 }
 
+
+Interface 
 
 using System;
 
@@ -163,6 +171,8 @@ class sag
     }
 }
 
+RunTime polymorhism/method overriding
+
 class Rbi
 {
     public virtual void IntrestPercentage()
@@ -182,19 +192,14 @@ class main
 {
     static void Main(String[] args)
     {
-        //Sbi sc = new Sbi();
-        Rbi rb = new Rbi();
-        // sc.IntrestPercentage();
-        //Rbi i = new Sbi();
-
+        
+        Rbi rb = new Sbi();
         rb.IntrestPercentage();
-        rb
-            .IntrestPercentage();
-
-    }
-
+       }
 }
 
+
+Inheritence
 
 using System;
 
